@@ -1,0 +1,20 @@
+.create-crew{
+    flex: display;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-size: large;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}

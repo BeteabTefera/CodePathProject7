@@ -60,17 +60,62 @@ const EditCrew = () => {
 
     return (
         <div className="edit-crew">
-        <img src='src/components/crewmateSource1.png' width='500'/>
+            <img src='https://shimmering-stardust-c75334.netlify.app/assets/crewmates.43d07b24.png' width='500'/>
             <h1>Edit Crewmate</h1>
             <form onSubmit={updatePost}>
-                <label>Name</label>
-                <input type="text" value={post.name} onChange={(e) => setPost({...post, name: e.target.value})} />
-                <label>Speed</label>
-                <input type="text" value={post.speed} onChange={(e) => setPost({...post, speed: e.target.value})} />
-                <label>Color</label>
-                <input type="text" value={post.color} onChange={(e) => setPost({...post, color: e.target.value})} />
-                <button type="submit">Update</button>
-                <button onClick={deletePost}>Delete</button>
+                <div className="mini-container">
+                    <label>Name</label>
+                    <input type="text" value={post.name} onChange={(e) => setPost({...post, name: e.target.value})} />
+                </div>
+
+                <div className="mini-container">
+                    <label>Speed</label>
+                    <input type="text" value={post.speed} onChange={(e) => setPost({...post, speed: e.target.value})} />
+                </div>
+
+                <div className="mini-container">
+                    <label>Color</label>
+                    <label>
+                        <input type="radio" name="color" value="red" checked={post.color === 'red'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color red"></span>
+                        Red
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="blue" checked={post.color === 'blue'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color blue"></span>
+                        Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="green" checked={post.color === 'green'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color green"></span>
+                        Green
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="pink" checked={post.color === 'pink'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color pink"></span>
+                        Pink
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="orange" checked={post.color === 'orange'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color orange"></span>
+                        Orange
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="yellow" checked={post.color === 'yellow'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color yellow"></span>
+                        Yellow
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="black" checked={post.color === 'black'} onChange={(e) => setPost({...post, color: e.target.value})} />
+                        <span className="color black"></span>
+                        Black
+                    </label>
+                </div>
+
+                    <button type="submit">Update</button>
+                    <button onClick={deletePost}>Delete</button>                
+
+
             </form>
         </div>
     )
