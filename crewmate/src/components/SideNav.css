@@ -1,0 +1,22 @@
+.sidenav{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(235, 235, 235, 0.8); /* Set the alpha value to 0.8 for 80% opacity */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.img {
+    position: absolute;
+    bottom: 10px;
+}
