@@ -5,7 +5,7 @@ const SideNav = () => {
     //this functions displays option to create a new crewmate, or to view all crewmates
     return (
       <div className="sidenav"> 
-        <Link to ='/'>Home</Link>
+        <Link to ='/' >Home</Link>
         <br/>
         <Link to ='/create'>Create Crewmate!</Link>
         <br/>

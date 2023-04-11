@@ -19,3 +19,9 @@
     position: absolute;
     bottom: 10px;
 }
+
+a[href='/'],
+a[href='/create'],
+a[href='/view'] {
+  color: black;
+}

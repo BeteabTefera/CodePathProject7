@@ -33,14 +33,20 @@ const ReadCrew = () => {
           <img src='src/components/crewmateSource1.png' width='500'/>
             <h1>View Crewmates</h1>
             <div className="crewmates">
-                {loading ? <h1>Loading...</h1> : crewmates.map((crewmate) => (
+            {
+                crewmates && crewmates.length > 0 ? crewmates.map((crewmate) => (
                     <div className="crewmate" key={crewmate.id}>
-                        <h2>{crewmate.name}</h2>
-                        <h3>Speed: {crewmate.speed}</h3>
-                        <h3>Color: {crewmate.color}</h3>
+                        <h3>{crewmate.name}</h3>
+                        <p>Speed: {crewmate.speed}</p>
+                        <p>Color: {crewmate.color}</p>
                         <Link to={`/edit/${crewmate.id}`}>Edit</Link>
                     </div>
-                ))}
+                )) : (
+                    <div>
+                        <h3>No crewmates yet! :( </h3>
+                    </div>
+                )
+            }
             </div>
         </div>
     )
