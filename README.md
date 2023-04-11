@@ -1,19 +1,19 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - *Crew Mate*
 
-Submitted by: **Your Name Here**
+Submitted by: **Beteab Tefera**
 
-This web app: **insert description**
+This web app: **Uses Supabase Database to perform CRUD operations**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **A create form allows users to add new cremates**
-- [ ] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
-- [ ] **The site displays a summary page of all the user's added crewmates**
-- [ ] **A previously created crewmate can be updated and deleted from the crewmate list**
+- [x] **A create form allows users to add new cremates**
+- [x] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
+- [x] **The site displays a summary page of all the user's added crewmates**
+- [x] **A previously created crewmate can be updated and deleted from the crewmate list**
 - [ ] **Each crewmate has a direct, unique link to an info page about them**
 
 The following **optional** features are implemented:
@@ -22,15 +22,11 @@ The following **optional** features are implemented:
 - [ ] The site displays summary statistics about a user's crew on their crew page 
 - [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
 
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/BeteabTefera/CodePathProject7/blob/main/Walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -43,9 +39,11 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+The direct, link was a problem. I will try to figure it out within the 48 hour extension.
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Beteab Tefera]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
