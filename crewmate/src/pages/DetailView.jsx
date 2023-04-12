@@ -35,15 +35,21 @@ const DetailView = () => {
     //the return statement will give a detail view and special message based on the crewmate's speed
     return (
         <div className="detail-view">
-            <img src='/src/components/blankCrewmate.png' ></img>
+            <img src='/src/components/blankCrewmate.png' width='50' ></img>
             <h1>{crewmate.name}</h1>
             <p>Speed: {crewmate.speed}</p>
             <p>Color: {crewmate.color}</p>
             <div className="special-message">
-                {crewmate.speed > 5 ? (
+                {crewmate.speed > 50 ? (
                     <p>Wow, {crewmate.name} is fast!</p>
                 ) : (
                     <p>{crewmate.name} is slow.</p>
+                )}
+
+                {crewmate.color == 'red'? (
+                    <p>{crewmate.name} is a crewmate.</p>
+                ) : (
+                    <p>{crewmate.name} is an impostor.</p>
                 )}
 
             </div>
