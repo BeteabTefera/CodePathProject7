@@ -7,6 +7,7 @@ import SideNav from './components/SideNav'
 import ReadCrew from './pages/ReadCrew'
 import CreateCrew from './pages/CreateCrew'
 import EditCrew from './pages/EditCrew'
+import DetailView from './pages/DetailView'
 import Home from './pages/Home'
 
 
@@ -18,6 +19,7 @@ function App() {
     { path: '/create', element: <CreateCrew /> },
     { path: '/view', element: <ReadCrew /> },
     { path: '/edit/:id', element: <EditCrew /> },
+    { path: '/detail/:id', element: <DetailView /> },
   ])
 
 
